@@ -1,0 +1,310 @@
+@import url(reset.css);
+
+body{
+	background-color: #00CCFF;
+}
+.nav {
+    display: flex;
+	position: fixed;
+	top: 0;
+	padding-top: 10px;
+	font-size: 24px;
+    height: 45px;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #fff;
+	box-shadow: 0px 1px 10px 0px #000;
+	z-index: 2;
+}
+
+.nav a, .container a{
+	text-decoration: none;
+	color: #000;
+}
+.nav a:visited, .container a:visited {
+	color: #000;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 75px;
+	padding-top: 35px;
+	padding-bottom: 135px;
+}
+.container {
+	display: flex;
+	background: #fff;
+	box-shadow: 0px 2px 10px 0px #000;
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#info {
+	background-image: url('./image/header.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	padding-top: 250px;
+	height: 745px;
+	font-size: 45px;
+	font-style: italic;
+}
+
+#info .container {
+		flex-direction: row;
+	}
+#history {
+	background-image: url('./image/history.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	padding-top: 250px;
+	height: 745px;
+}
+#history h1{
+	color: #000;
+}
+#attractions {
+	background-image: url('./image/attractions.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	padding-top: 250px;
+	height: 745px;
+}
+#travel {
+	background-image: url('./image/travel.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	padding-top: 250px;
+	height: 745px;
+}
+#accommodations {
+	background-image: url('./image/accommodations.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	padding-top: 250px;
+	height: 745px;
+}
+#faq {
+	background-image: url('./image/faq.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	padding-top: 250px;
+	height: 745px;
+}
+#faq .container {
+	justify-content: start;
+}
+.feed {
+	width: 15%;
+	height: 100%;
+	box-shadow: 1px 0px 3px #000;
+	overflow: scroll;
+}
+.about {
+	margin-left: 5%;
+	width: 80%;
+	height: auto;
+	box-shadow: -1px 0px 3px #000;
+	background-color: #fff;
+}
+.about p {
+	padding-top: 100px;
+	padding-bottom: 125px;
+}
+.tweetHeader {
+	background-color: #0099ff;
+	color: #fff;
+	height: 48px;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+.innerContainer{
+	width: 96%;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 1px 1px 1px 0px #000;
+	border-style: solid;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-width: 1px 1px 1px 0px;
+	align-items: center;
+}
+
+.contentImage {
+	height: 160px;
+	width: 160px;
+	border-width: 0px 2px 0px 0px;
+	border-style: solid;
+	box-shadow: -1px 0px 3px #000;
+}
+
+.contentText{
+	width: 75%;
+	
+}
+.faqContainer{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+.faqHeader{
+	width: 100%;
+	text-align: left;
+	height: auto;
+	font-size: 20px;
+	font-style: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-width: 0px 0px 2px 0px; 
+	border-style: dashed;
+}
+
+.faqAnswer{	
+	width: 100%;
+	border-width: 0px 0px 2px 0px; 
+	border-style: solid;
+	text-align: left;
+	height: auto;
+	font-size: 14px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+
+}
+
+footer{
+	background-color: #fff;
+	height: 45px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0px 1px 10px 0px #000;
+	position: relative;
+}
+
+.footerText{
+	width: 30%;
+}
+.footerLink {
+	width: 15%;
+}
+@media screen and (max-width:1145px){
+	.feed {
+		width: 30%;
+	}
+	.tweetHeader{
+		padding-left: 2px;
+	}
+	.about {
+		width: 65%;
+	}
+	.contentText {
+		padding-left: 5px;
+	}
+	.about p {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+}
+
+@media screen and (max-width:845px){
+	#faq .container {
+			height: 450px;
+		}
+	#info {
+		font-size: 42px;
+	}
+	.about p {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+@media screen and (max-width:575px) {
+	.nav {
+		font-size: 20px;
+		height: 75px;
+		padding-top: 5px;
+		flex-wrap: wrap;
+	}
+	.nav a {
+		padding: 10px 7px;
+	}
+	h1 {
+		font-size: 55px;
+		padding-bottom: 150px;
+	}
+	#info .container {
+		flex-direction: column;
+	}
+	.feed {
+		height: 50%;
+		width: 100%;
+		overflow: hidden;
+	}
+	.about { 
+		height: 50%;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.about p {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	footer {
+		flex-wrap: wrap;
+		height: 115px;
+	}
+	.footerText {
+		width: 35%;
+		padding-top: 2px;
+	}
+	.footerLink{
+		width: 25%;
+		padding-top: 2px;
+	}
+	
+	#info {
+		height: 730px;
+		font-size: 24px;
+	}
+	#history {
+		height: 728px;
+	}
+	#attractions {
+		height: 728px;
+		font-size: 12px;
+	}
+	#travel {
+		height: 728px;
+		font-size: 12px;
+	}
+	#accommodations {
+		height: 728px;
+		font-size: 12px;
+	}
+	#faq {
+		height: 995px;
+	}
+	#faq .container {
+		height: 785px;
+	}
+	.contentImage {
+		height: 100px;
+		width: 100px;
+	}
+	h1 {
+		font-size: 42px;
+	}
+}
